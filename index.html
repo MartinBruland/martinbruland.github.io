@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+        <title> Portfolio | Martin Bruland </title>
+        <link rel="stylesheet" href="index.css">
+        
+        <script src="Components/Views/project_view.js"></script>
+        <script src="Components/Views/section_view.js"></script>
+        <script src="Components/Buttons/project_button.js"></script>
+        <script src="Components/Buttons/default_button.js"></script>
+        
+        <script src="Data/data.js"></script>
+        <script src="app.js"></script>
+
+    </head>
+
+    <body onload="setup()">
+
+        <div id="mainpage">
+            <input id="slide-sidebar" type="checkbox" role="button" />
+            <div id="header">
+                <label for="slide-sidebar">
+                    <div id="burger_button">
+                        <div class="burger_button_line"></div>
+                        <div class="burger_button_line"></div>
+                        <div class="burger_button_line"></div>
+                    </div>
+                </label>
+                <p id="header_title">Portfolio</p>
+            </div>
+            <div id="sidemenu" class="sidemenu">
+                <div id="upper" class="sidemenu_content"></div>
+                <div id="lower" class="sidemenu_content"></div>
+            </div>
+            <div id="project_collection" class="project_collection"></div>
+
+        </div>
+
+    </body>
+</html>
